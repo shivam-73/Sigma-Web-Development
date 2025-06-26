@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+    <style>
+
+        /* The Specificity of this is 1  */
+        h1{
+            color: aqua;
+        }
+        /* The specificity of this is 10  */
+        .cpurple{
+            color: purple;
+        }
+        /* The specificity of this is 10  */
+        /* .yellow{
+            color:yellow;
+            color: green !important
+        } */
+        
+        /* The specificity of this is 10  */
+        .cred{
+            color: red;
+        }
+
+        /* This is a attribute selector  */
+        [data-x = "a"]{
+            color: blue;
+        }
+        /* The specificity of this is 1 + 10 = 11  */
+        h1.yellow{
+            color: hotpink
+        }
+         /* 10000 > 1000 > 100 > 10 > 1 > 0  */
+        /* Important > inline > id > class or attribute > element > universal  */ 
+    </style>
+</head>
+<body>
+    <h1 class="yellow cpurple cred" data-x="a">CSS Specificity</h1>
+</body>
+</html>

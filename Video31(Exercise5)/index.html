@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", sans-serif;
+        }
+        header{
+            position: sticky;
+            top:0;
+        }
+
+        nav{
+            background-color: plum;
+            padding: 10px;
+        }
+        ul li{
+            list-style:none;
+            display: inline-flex;
+            padding: 10px;
+            margin: 0px 30px;
+        }
+        li:hover{
+            font-size: larger;
+            text-shadow: 2px 2px slategrey ;
+        }
+        .container{
+            background-color: aqua;
+            text-align: center;
+            border: 2px solid black;
+            padding: 55px 23px;
+            margin: 12px 34px;
+            display: inline-flex;
+            border-radius: 12px;
+        }
+        p{
+            background-color: whitesmoke;
+            padding: 10px;
+            width: 85%;
+            margin: auto;
+            border: 2px solid black;
+            border-radius: 12px;
+        }
+        .rectangle{
+            border: 2px solid black;
+            margin: 8px 34px;
+            padding: 30px;
+            text-align: center;
+            font-size: 40px;
+            font-weight: bolder;
+            border-radius: 20px;
+        }
+        img{
+            width: 32px;
+            height:32px;
+            background-color: orange;
+            border-radius: 60px;
+            position: fixed;
+            bottom: 12px;
+            right:23px;
+        }
+        footer{
+            margin:15px;
+            padding: 10px;
+            background-color: rgb(205, 89, 89);
+            border-radius: 12px;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <UL>
+                <li>Home</li>
+                <li>Contact</li>
+                <li>Servies</li>
+                <li>Email</li>
+                <li>About</li>
+            </UL>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="box1">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum a dolorem voluptas asperiores impedit, ex temporibus distinctio? Iusto, ducimus id! Aut veritatis blanditiis recusandae nihil culpa quibusdam ut, rem, sint tempore, mollitia odit nobis. Pariatur, ducimus, tenetur blanditiis odit reprehenderit harum modi quas quae voluptatum, possimus asperiores deserunt suscipit! Eum cupiditate et quas sit, impedit doloremque perferendis ex minima quisquam. Esse quas non provident ducimus sint id possimus! Culpa exercitationem aut explicabo suscipit repellendus facilis voluptate! Pariatur odit, cupiditate in accusamus atque vero voluptates dolore at quaerat saepe minus suscipit eligendi reiciendis fuga voluptatem, sequi a? Inventore quam recusandae sed!
+                </p>
+            </div>
+
+            <div class="box2">
+                <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo expedita itaque labore harum magni necessitatibus eligendi officiis totam iure, rem dolorum saepe ex quidem? Quae vel amet voluptatem. Natus obcaecati temporibus vitae ad quam nostrum nesciunt optio voluptate a assumenda recusandae harum alias, soluta saepe, nulla ut quaerat unde sequi facere fuga magnam. Temporibus dolor perspiciatis sunt porro totam autem perferendis architecto commodi iure voluptates, tenetur libero voluptatum, aliquam, animi quo sit consequuntur? Aliquid, numquam! Facere eveniet quibusdam provident velit commodi, optio vero modi exercitationem recusandae. Et rerum assumenda officiis ullam iusto aliquid, dolores sint, esse natus, sapiente deleniti? Nesciunt!
+                </p>
+            </div>
+        </div>
+        <div class="rectangle">Welcome to Sigma Web Development Express</div>
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Vanamo_Logo.png"  width="50px" alt="">
+        </div>
+    </main>
+
+    <footer>All Rights Reserved &copy;
+    </footer>
+</body>
+</html>

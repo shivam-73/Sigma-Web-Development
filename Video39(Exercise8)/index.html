@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 80vw;
+            height: 80vh;
+            background-color: blueviolet;
+            position: relative;
+            border: 2px solid black;
+        }
+
+        .box{
+            height: 90px;
+            width: 90px;
+            left:0;
+            bottom: 0;
+            background-color: red;
+            border:2px solid black;
+            border-radius: 70px;
+            position: absolute;
+            animation-play-state: paused;
+            animation: animationInY 1s ease-out infinite alternate
+            , animationInX 10s linear infinite ;
+            /* animation: name duration linear delay iteration-count direction fill-mode; */
+        }
+
+        @keyframes animationInX {
+            from{
+                left:0;
+            }
+            to{
+                left:90%
+            }
+        }
+
+        @keyframes animationInY {
+            from{
+                bottom: 0%;
+            }
+            to{
+                bottom: 50%;   
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+
+        </div>
+    </div>
+</body>
+</html>

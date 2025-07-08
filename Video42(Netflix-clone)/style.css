@@ -1,0 +1,371 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+ * {
+   padding: 0;
+   margin: 0;
+   font-family: "Poppins", sans-serif;
+   color: white;
+ }
+
+ body {
+   background-color: black;
+   overflow-x: hidden;
+ }
+
+ .top-vignette {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100vw;
+   height: 150px;
+   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent);
+   pointer-events: none;
+   z-index: 1;
+ }
+
+ .main {
+   background-image: url("assets/images/bg.jpg");
+   height: 100vh;
+   background-size: max(1200px, 100vw);
+   background-position: center center;
+   background-repeat: no-repeat;
+   position: inherit;
+ }
+
+ .main .box {
+   opacity: 0.75;
+   height: 100vh;
+   width: 100%;
+   background-color: black;
+   position: absolute;
+   top: 0;
+ }
+
+ nav {
+   display: flex;
+   /* max-width: 60vw; */
+   margin: auto;
+   align-items: center;
+   justify-content: space-between;
+   max-width: 80vw;
+   height: 88px;
+ }
+
+ nav img {
+   color: rgb(229, 9, 20);
+   width: 148px;
+   position: relative;
+   z-index: 10;
+ }
+
+ nav button {
+   position: relative;
+   z-index: 10;
+ }
+
+ .lang-icon{
+    width: 16px;  
+    display: inline-block;
+  vertical-align: middle;
+ }
+ .btn {
+   padding: 3px 16px;
+   font-weight: 400;
+   color: white;
+   background-color: rgba(248, 243, 243, 0.021);
+   border-radius: 4px;
+   border: 1px solid gray;
+   cursor: pointer;
+  
+
+ }
+
+ .btn-red {
+  margin-left:10px;
+    background-color: red;
+    padding: 5px 18px;
+    font-size: 14px;
+    border-radius: 4px;
+    font-weight: 400;
+    border:0px;
+}
+
+
+ .hero-section {
+   position: relative;
+   height: 88vh;
+   width: 45vw;
+   margin-left: auto;
+   margin-right: auto;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+ }
+
+ .content {
+   position: relative;
+   z-index: 2;
+   max-width: 80vw;
+   padding: 0 20px;
+ }
+
+ .content h1 {
+   line-height: 125%;
+   font-size: 56px;
+   font-weight: 900;
+   text-align: center;
+   margin-bottom: 15px;
+ }
+
+ .content h2 {
+   font-size: 20px;
+   font-weight: 500;
+   text-align: center;
+   margin-bottom: 30px;
+ }
+
+ .content p {
+   font-size: 16px;
+   font-weight: 400;
+   text-align: center;
+   margin-bottom: 20px;
+   line-height: 0;
+ }
+
+ .input-box {
+   display: flex;
+   max-width: 629px;
+   height: 56px;
+   margin: 0 auto;
+   flex-wrap: wrap;
+   justify-content: center;
+ }
+
+ .input-box input {
+   flex: 1;
+   padding: 12px;
+   font-size: 1rem;
+   outline: none;
+
+   border-radius: 4px;
+   font-weight: 500;
+   background-color: rgba(20, 18, 18, 0.8);
+   border: 1px solid grey;
+   caret-color: rgb(255, 255, 255);
+   height: 56px;
+   box-sizing: border-box;
+ }
+
+ .input-box button {
+   background-color: rgb(229, 9, 20);
+   color: white;
+   border: none;
+   padding: 12px 24px;
+   font-size: 20px;
+   font-weight: 500;
+   cursor: pointer;
+   border-radius: 4px;
+   margin-left: 10px;
+   border: 1px solid grey;
+   height: 56px;
+   box-sizing: border-box;
+ }
+
+ .input-box button:hover {
+   background-color: #c71d0a;
+ }
+
+ .separation {
+   height: 7px;
+   background-color: rgb(46, 44, 44);
+ }
+
+
+ .section-1{
+  padding: 0px 148px;
+  /* margin-top: 20px; */
+  display: flex;
+  flex-direction: column;
+ }
+
+ .trending-section{
+  margin-bottom: 64px;
+  margin-top: 20px;
+ }
+
+ .trending-section h2{
+    font-size: 24px;
+    font-weight:500;
+    padding-bottom: 10px;
+ }
+
+ .card-container{
+  display: flex;
+  overflow-x:auto;
+  overflow-y: hidden;
+  flex-direction: row;
+  box-sizing: border-box;
+  scrollbar-width: none;
+ }
+
+ .card{
+    position: relative;
+    width:180px;
+    padding: 8px 22px;
+    flex:0 0 auto;
+ }
+
+ .card span{
+  display: block;
+  width:100%;
+  height: 276px;
+  background-size: cover;
+  border-radius: 8px;
+ }
+
+ .rank {
+  position: absolute;
+  left: 3px;
+  bottom: -10px;
+  font-size: 100px;
+  font-weight: 700;
+  color: black;
+  -webkit-text-stroke: 2px white;
+  z-index: 2;
+}
+
+.join-reason{
+  margin-bottom: 64px;
+}
+.join-reason h2{
+    font-size: 24px;
+    font-weight: 500;
+    padding-bottom: 10px;
+ }
+
+ .join-container{
+  display: grid;
+  box-sizing: border-box;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+ }
+
+ .join-card{
+    background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+    position: relative;
+    width: auto;
+    height: 100%;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: space-between;
+ }
+
+ .join-card h3{
+    font-size: 21px;
+    font-weight: 600;
+    padding-bottom: 10px;
+ }
+ 
+ .join-card p{
+      font-size: 16px;
+      font-weight: 200;
+      color: rgba(255, 255,255,0.8);
+ }
+
+ .join-card img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  align-self: flex-end;
+}
+
+.faq{
+  margin-bottom: 64px;
+}
+
+.faq h2{
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+.faq-container{
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.faq-question{
+  display: flex;
+  background-color: rgb(45, 45, 45);
+  justify-content: space-between;
+  padding: 24px;
+  cursor: pointer;
+}
+
+.faq-question:hover{
+ background-color:rgb(69, 69, 69) ;
+}
+
+.faq-question span{
+      font-size: 24px;
+    font-weight: 300;
+}
+
+.email{
+  margin-bottom: 64px;
+  text-align: center;
+}
+
+.email p{
+  margin-bottom: 20px;
+}
+
+footer{
+    font-size: 14px;
+    padding-bottom: 96px;
+    font-weight: 200;
+    color: rgba(255, 255, 255, 0.7);
+}
+footer p{
+  padding-bottom: 10px;
+}
+.footer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-bottom: 14px;
+}
+
+.footer-item{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-item a{
+  text-decoration: none;
+  text-decoration: underline rgba(255, 255, 255, 0.7) 1px;
+    margin-top:12px;
+}
+
+.language{
+  margin-top: 36px;
+}
+
+.netflix{
+  margin-top: 36px;
+}
+
+.google{
+  font-size: 13px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.google a{
+    color: rgb(68, 142, 244);
+}

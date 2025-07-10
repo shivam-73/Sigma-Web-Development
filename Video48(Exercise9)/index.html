@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faulty Calculator</title>
+    <style>
+        div{
+            display: flex;
+            width: 50vw;
+            height: 50vh;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin:auto;
+            border: 2px solid palevioletred;
+            padding: auto;
+        }
+        input{
+            width: auto;
+            height: 25px;
+            margin:20px 20px;
+            border: 2px solid black;
+        }
+        select{
+            width: 100px;
+            height: 25px;
+
+        }
+    </style>
+
+</head>
+<body>
+    <div>
+    <input type="number"  id="num1" placeholder="Enter first number: ">
+    <input type="number"  id="num2" placeholder="Enter second number: ">
+
+    <select id="operator">
+        <option value="+">Add</option>
+        <option value="-">Subtract</option>
+        <option value="*">Multiply</option>
+        <option value="/">Divide</option>
+    </select>
+
+    <button onclick="Calculator()">Calculate</button>
+    <h3 id = "result"></h3>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
